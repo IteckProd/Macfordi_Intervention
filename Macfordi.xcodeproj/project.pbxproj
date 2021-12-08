@@ -41,6 +41,7 @@
 		BFDBC14F27611A7F0075DA2A /* AuthentificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDBC14E27611A7F0075DA2A /* AuthentificationView.swift */; };
 		BFDBC15127611B3C0075DA2A /* underlineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDBC15027611B3C0075DA2A /* underlineTextField.swift */; };
 		BFDBC15C276122280075DA2A /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFDBC15B276122280075DA2A /* Colors.xcassets */; };
+		BFDBC15E276127830075DA2A /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDBC15D276127830075DA2A /* Colors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		BFDBC14E27611A7F0075DA2A /* AuthentificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthentificationView.swift; sourceTree = "<group>"; };
 		BFDBC15027611B3C0075DA2A /* underlineTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = underlineTextField.swift; sourceTree = "<group>"; };
 		BFDBC15B276122280075DA2A /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		BFDBC15D276127830075DA2A /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 				BFDBC15427611DA00075DA2A /* UIElement */,
 				BFDBC10B27610B330075DA2A /* Assets.xcassets */,
 				BFDBC15B276122280075DA2A /* Colors.xcassets */,
+				BFDBC15D276127830075DA2A /* Colors.swift */,
 				BFDBC1462761181F0075DA2A /* GoogleService-Info.plist */,
 				BFDBC10D27610B330075DA2A /* Preview Content */,
 			);
@@ -268,6 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFDBC10A27610B2F0075DA2A /* ContentView.swift in Sources */,
+				BFDBC15E276127830075DA2A /* Colors.swift in Sources */,
 				BFDBC1492761190A0075DA2A /* AuthenticationState.swift in Sources */,
 				BFDBC10827610B2F0075DA2A /* MacfordiApp.swift in Sources */,
 				BFDBC14F27611A7F0075DA2A /* AuthentificationView.swift in Sources */,

@@ -34,7 +34,6 @@ struct AuthentificationView: View {
     
     @EnvironmentObject var authState: AuthenticationState
     @State var authType = AuthenticationType.signup
-    @State var userState: Int
     
     @State var mail = ""
     @State var password = ""
@@ -54,7 +53,7 @@ struct AuthentificationView: View {
             } else {
                 HStack {
                     Spacer()
-                    Text("Mot de passe oublié ?").font(.system(size: 14, weight: .medium)).foregroundColor(Color(ColorPalette.NewColor.ActionEnable))
+                    Text("Mot de passe oublié ?").font(.system(size: 14, weight: .medium)).foregroundColor(Colors.Enable)
                 }.padding(.bottom, 35)
             }
         }

@@ -17,7 +17,7 @@ extension View {
         self
             .padding(.vertical, 10)
             .overlay(Rectangle().frame(height: 2).padding(.top, 35))
-            .foregroundColor(Color(ColorPalette.NewColor.ActionEnable))
+            .foregroundColor(Colors.Enable)
             .padding(10)
     }
 }
