@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BF51AC162771DA7E006FAA07 /* ButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF51AC152771DA7E006FAA07 /* ButtonsView.swift */; };
+		BF51AC182771EB4C006FAA07 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF51AC172771EB4C006FAA07 /* MainView.swift */; };
 		BFDBC10827610B2F0075DA2A /* MacfordiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDBC10727610B2F0075DA2A /* MacfordiApp.swift */; };
 		BFDBC10A27610B2F0075DA2A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDBC10927610B2F0075DA2A /* ContentView.swift */; };
 		BFDBC10C27610B330075DA2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFDBC10B27610B330075DA2A /* Assets.xcassets */; };
@@ -47,6 +48,7 @@
 
 /* Begin PBXFileReference section */
 		BF51AC152771DA7E006FAA07 /* ButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsView.swift; sourceTree = "<group>"; };
+		BF51AC172771EB4C006FAA07 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		BFDBC10427610B2F0075DA2A /* Macfordi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Macfordi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFDBC10727610B2F0075DA2A /* MacfordiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacfordiApp.swift; sourceTree = "<group>"; };
 		BFDBC10927610B2F0075DA2A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 			children = (
 				BFDBC10727610B2F0075DA2A /* MacfordiApp.swift */,
 				BFDBC10927610B2F0075DA2A /* ContentView.swift */,
+				BF51AC172771EB4C006FAA07 /* MainView.swift */,
 				BFDBC15827611E310075DA2A /* Model */,
 				BFDBC15527611DCE0075DA2A /* Repository */,
 				BFDBC14A2761190E0075DA2A /* Auth */,
@@ -274,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFDBC10A27610B2F0075DA2A /* ContentView.swift in Sources */,
+				BF51AC182771EB4C006FAA07 /* MainView.swift in Sources */,
 				BFDBC15E276127830075DA2A /* Colors.swift in Sources */,
 				BFDBC1492761190A0075DA2A /* AuthenticationState.swift in Sources */,
 				BFDBC10827610B2F0075DA2A /* MacfordiApp.swift in Sources */,

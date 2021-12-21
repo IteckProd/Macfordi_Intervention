@@ -14,7 +14,10 @@ struct ContentView: View {
     var body: some View {
         if authState.loggedInUser != nil {
             //mainTabView
-            Text("user connected")
+            NavigationView {
+                MainView()
+                    .environmentObject(authState)
+            }.navigationViewStyle(StackNavigationViewStyle())
         } else {
             //AuthView
             AuthentificationView()

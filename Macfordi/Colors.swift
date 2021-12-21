@@ -12,4 +12,5 @@ struct Colors {
     
     static let Enable = Color(UIColor(named:"PrimaryYellow")!)
     static let Disable = Color(UIColor(named:"SecondaryYellow")!)
+    static let Background = Color(UIColor(named: "Background")!)
 }
