@@ -34,6 +34,29 @@ struct ButtonSecondary: View {
     }
 }
 
+struct ButtonEnriched: View {
+    let placeholder: String
+    @Binding var text: String
+    
+    var body: some View {
+        ZStack {
+            RoundedRectangle(cornerRadius: 10)
+                .frame(height: 55)
+                .foregroundColor(Colors.Background)
+            HStack {
+                Text(text.isEmpty ? placeholder : text)
+                    .font(.system(size: 18, weight: .semibold))
+                    .foregroundColor(text.isEmpty ? .gray : Colors.Enable)
+                Spacer()
+                Image(systemName: "chevron.forward")
+                    .font(.system(size: 18, weight: .semibold))
+                    .foregroundColor(Colors.Enable)
+            }.padding(.all)
+            
+        }
+    }
+}
+
 struct ButtonThird: View {
     let text: String
     var body: some View {

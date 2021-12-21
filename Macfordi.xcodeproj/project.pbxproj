@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		BF51AC162771DA7E006FAA07 /* ButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF51AC152771DA7E006FAA07 /* ButtonsView.swift */; };
 		BF51AC182771EB4C006FAA07 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF51AC172771EB4C006FAA07 /* MainView.swift */; };
+		BF51AC1A27720C2A006FAA07 /* PrimaryInformationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF51AC1927720C2A006FAA07 /* PrimaryInformationsView.swift */; };
+		BF51AC2227720F9D006FAA07 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF51AC2127720F9D006FAA07 /* SearchView.swift */; };
+		BF51AC2427720FCD006FAA07 /* TitlesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF51AC2327720FCD006FAA07 /* TitlesView.swift */; };
+		BF51AC2627721134006FAA07 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF51AC2527721134006FAA07 /* SearchBar.swift */; };
+		BF51AC2B27723939006FAA07 /* Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF51AC2A27723939006FAA07 /* Keyboard.swift */; };
 		BFDBC10827610B2F0075DA2A /* MacfordiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDBC10727610B2F0075DA2A /* MacfordiApp.swift */; };
 		BFDBC10A27610B2F0075DA2A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDBC10927610B2F0075DA2A /* ContentView.swift */; };
 		BFDBC10C27610B330075DA2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFDBC10B27610B330075DA2A /* Assets.xcassets */; };
@@ -49,6 +54,11 @@
 /* Begin PBXFileReference section */
 		BF51AC152771DA7E006FAA07 /* ButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsView.swift; sourceTree = "<group>"; };
 		BF51AC172771EB4C006FAA07 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		BF51AC1927720C2A006FAA07 /* PrimaryInformationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryInformationsView.swift; sourceTree = "<group>"; };
+		BF51AC2127720F9D006FAA07 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		BF51AC2327720FCD006FAA07 /* TitlesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitlesView.swift; sourceTree = "<group>"; };
+		BF51AC2527721134006FAA07 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		BF51AC2A27723939006FAA07 /* Keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keyboard.swift; sourceTree = "<group>"; };
 		BFDBC10427610B2F0075DA2A /* Macfordi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Macfordi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFDBC10727610B2F0075DA2A /* MacfordiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacfordiApp.swift; sourceTree = "<group>"; };
 		BFDBC10927610B2F0075DA2A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -98,6 +108,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BF51AC1B27720C35006FAA07 /* PrimaryInformations */ = {
+			isa = PBXGroup;
+			children = (
+				BF51AC1C27720C3F006FAA07 /* Model */,
+				BF51AC2027720C6E006FAA07 /* ViewModel */,
+				BF51AC1D27720C43006FAA07 /* View */,
+			);
+			path = PrimaryInformations;
+			sourceTree = "<group>";
+		};
+		BF51AC1C27720C3F006FAA07 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BF51AC1D27720C43006FAA07 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BF51AC1927720C2A006FAA07 /* PrimaryInformationsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BF51AC2027720C6E006FAA07 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		BFDBC0FB27610B2F0075DA2A = {
 			isa = PBXGroup;
 			children = (
@@ -120,6 +162,7 @@
 				BFDBC10727610B2F0075DA2A /* MacfordiApp.swift */,
 				BFDBC10927610B2F0075DA2A /* ContentView.swift */,
 				BF51AC172771EB4C006FAA07 /* MainView.swift */,
+				BF51AC1B27720C35006FAA07 /* PrimaryInformations */,
 				BFDBC15827611E310075DA2A /* Model */,
 				BFDBC15527611DCE0075DA2A /* Repository */,
 				BFDBC14A2761190E0075DA2A /* Auth */,
@@ -153,8 +196,12 @@
 		BFDBC15427611DA00075DA2A /* UIElement */ = {
 			isa = PBXGroup;
 			children = (
+				BF51AC2127720F9D006FAA07 /* SearchView.swift */,
 				BFDBC15027611B3C0075DA2A /* underlineTextField.swift */,
 				BF51AC152771DA7E006FAA07 /* ButtonsView.swift */,
+				BF51AC2327720FCD006FAA07 /* TitlesView.swift */,
+				BF51AC2527721134006FAA07 /* SearchBar.swift */,
+				BF51AC2A27723939006FAA07 /* Keyboard.swift */,
 			);
 			path = UIElement;
 			sourceTree = "<group>";
@@ -276,13 +323,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF51AC2227720F9D006FAA07 /* SearchView.swift in Sources */,
 				BFDBC10A27610B2F0075DA2A /* ContentView.swift in Sources */,
 				BF51AC182771EB4C006FAA07 /* MainView.swift in Sources */,
 				BFDBC15E276127830075DA2A /* Colors.swift in Sources */,
 				BFDBC1492761190A0075DA2A /* AuthenticationState.swift in Sources */,
+				BF51AC2B27723939006FAA07 /* Keyboard.swift in Sources */,
+				BF51AC2627721134006FAA07 /* SearchBar.swift in Sources */,
 				BFDBC10827610B2F0075DA2A /* MacfordiApp.swift in Sources */,
 				BF51AC162771DA7E006FAA07 /* ButtonsView.swift in Sources */,
+				BF51AC1A27720C2A006FAA07 /* PrimaryInformationsView.swift in Sources */,
 				BFDBC14F27611A7F0075DA2A /* AuthentificationView.swift in Sources */,
+				BF51AC2427720FCD006FAA07 /* TitlesView.swift in Sources */,
 				BFDBC15127611B3C0075DA2A /* underlineTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
