@@ -10,7 +10,6 @@ import Firebase
 
 @main
 struct MacfordiApp: App {
-    let authState = AuthenticationState.shared
     
     init() {
         FirebaseApp.configure()
@@ -18,6 +17,8 @@ struct MacfordiApp: App {
     }
     
     var body: some Scene {
+        let authState = AuthenticationState.shared
+        
         WindowGroup {
             ContentView()
                 .environmentObject(authState)

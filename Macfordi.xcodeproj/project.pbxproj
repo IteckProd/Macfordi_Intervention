@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF51AC162771DA7E006FAA07 /* ButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF51AC152771DA7E006FAA07 /* ButtonsView.swift */; };
 		BFDBC10827610B2F0075DA2A /* MacfordiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDBC10727610B2F0075DA2A /* MacfordiApp.swift */; };
 		BFDBC10A27610B2F0075DA2A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDBC10927610B2F0075DA2A /* ContentView.swift */; };
 		BFDBC10C27610B330075DA2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFDBC10B27610B330075DA2A /* Assets.xcassets */; };
@@ -45,6 +46,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BF51AC152771DA7E006FAA07 /* ButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsView.swift; sourceTree = "<group>"; };
 		BFDBC10427610B2F0075DA2A /* Macfordi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Macfordi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFDBC10727610B2F0075DA2A /* MacfordiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacfordiApp.swift; sourceTree = "<group>"; };
 		BFDBC10927610B2F0075DA2A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				BFDBC15027611B3C0075DA2A /* underlineTextField.swift */,
+				BF51AC152771DA7E006FAA07 /* ButtonsView.swift */,
 			);
 			path = UIElement;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 				BFDBC15E276127830075DA2A /* Colors.swift in Sources */,
 				BFDBC1492761190A0075DA2A /* AuthenticationState.swift in Sources */,
 				BFDBC10827610B2F0075DA2A /* MacfordiApp.swift in Sources */,
+				BF51AC162771DA7E006FAA07 /* ButtonsView.swift in Sources */,
 				BFDBC14F27611A7F0075DA2A /* AuthentificationView.swift in Sources */,
 				BFDBC15127611B3C0075DA2A /* underlineTextField.swift in Sources */,
 			);

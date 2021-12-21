@@ -50,7 +50,7 @@ class AuthenticationState: NSObject, ObservableObject {
         }
     }
 
-    func signup(email: String, password: String, passwordConfirmation: String, userState: Int) {
+    func signup(email: String, password: String, passwordConfirmation: String) {
         guard password == passwordConfirmation else {
             self.error = NSError(domain: "", code: 9210, userInfo: [NSLocalizedDescriptionKey: "Le mot de passe n'est pas identique"])
             return

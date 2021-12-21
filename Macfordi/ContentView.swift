@@ -10,11 +10,14 @@ import SwiftUI
 struct ContentView: View {
     @EnvironmentObject var authState: AuthenticationState
     
+    
     var body: some View {
         if authState.loggedInUser != nil {
             //mainTabView
+            Text("user connected")
         } else {
             //AuthView
+            AuthentificationView()
         }
     }
 }
