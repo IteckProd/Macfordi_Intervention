@@ -62,7 +62,10 @@ struct MainView: View {
                 }.padding(.all)
             }.frame(height: UIScreen.main.bounds.height/4)
             Spacer()
-        }.padding(.all)
+        }
+        .navigationBarTitle("")
+        .navigationBarHidden(true)
+        .padding(.all)
     }
 }
 
