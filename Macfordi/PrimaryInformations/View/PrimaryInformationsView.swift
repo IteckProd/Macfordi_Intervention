@@ -100,7 +100,8 @@ struct PrimaryInformationsView: View {
             .edgesIgnoringSafeArea(.bottom)
             //TODO: Maps intervention exterieur
             
-        }.padding(.horizontal).padding(.top).navigationBarTitle("Informations Client")
+        }.padding(.horizontal).padding(.top)
+            .navigationBarTitle("Informations Client")
     }
 }
 

@@ -20,6 +20,29 @@ struct ButtonPrimary: View {
     }
 }
 
+struct ButtonPrimaryWithImage: View {
+    let text: String
+    let imageName: String
+    
+    var body: some View {
+        ZStack {
+            RoundedRectangle(cornerRadius: 10)
+                .frame(height: 55)
+                .foregroundColor(Colors.Background)
+            HStack {
+                Text(text)
+                    .font(.system(size: 18, weight: .semibold))
+                    .foregroundColor(text.isEmpty ? .gray : Colors.Enable)
+                Spacer()
+                Image(systemName: imageName)
+                    .font(.system(size: 18, weight: .semibold))
+                    .foregroundColor(Colors.Enable)
+            }.padding(.all)
+            
+        }
+    }
+}
+
 struct ButtonSecondary: View {
     let text: String
     var body: some View {

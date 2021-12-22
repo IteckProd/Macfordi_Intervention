@@ -14,6 +14,7 @@
 		BF51AC2427720FCD006FAA07 /* TitlesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF51AC2327720FCD006FAA07 /* TitlesView.swift */; };
 		BF51AC2627721134006FAA07 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF51AC2527721134006FAA07 /* SearchBar.swift */; };
 		BF51AC2B27723939006FAA07 /* Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF51AC2A27723939006FAA07 /* Keyboard.swift */; };
+		BF51AC3127732E0A006FAA07 /* DetailInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF51AC3027732E0A006FAA07 /* DetailInformationView.swift */; };
 		BFDBC10827610B2F0075DA2A /* MacfordiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDBC10727610B2F0075DA2A /* MacfordiApp.swift */; };
 		BFDBC10A27610B2F0075DA2A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDBC10927610B2F0075DA2A /* ContentView.swift */; };
 		BFDBC10C27610B330075DA2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFDBC10B27610B330075DA2A /* Assets.xcassets */; };
@@ -59,6 +60,7 @@
 		BF51AC2327720FCD006FAA07 /* TitlesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitlesView.swift; sourceTree = "<group>"; };
 		BF51AC2527721134006FAA07 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		BF51AC2A27723939006FAA07 /* Keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keyboard.swift; sourceTree = "<group>"; };
+		BF51AC3027732E0A006FAA07 /* DetailInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInformationView.swift; sourceTree = "<group>"; };
 		BFDBC10427610B2F0075DA2A /* Macfordi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Macfordi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFDBC10727610B2F0075DA2A /* MacfordiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacfordiApp.swift; sourceTree = "<group>"; };
 		BFDBC10927610B2F0075DA2A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -140,6 +142,38 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		BF51AC2C27732DC2006FAA07 /* DetailInformations */ = {
+			isa = PBXGroup;
+			children = (
+				BF51AC2D27732DDE006FAA07 /* Model */,
+				BF51AC2E27732DE7006FAA07 /* ViewModel */,
+				BF51AC2F27732DEE006FAA07 /* View */,
+			);
+			path = DetailInformations;
+			sourceTree = "<group>";
+		};
+		BF51AC2D27732DDE006FAA07 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BF51AC2E27732DE7006FAA07 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BF51AC2F27732DEE006FAA07 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BF51AC3027732E0A006FAA07 /* DetailInformationView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		BFDBC0FB27610B2F0075DA2A = {
 			isa = PBXGroup;
 			children = (
@@ -162,6 +196,7 @@
 				BFDBC10727610B2F0075DA2A /* MacfordiApp.swift */,
 				BFDBC10927610B2F0075DA2A /* ContentView.swift */,
 				BF51AC172771EB4C006FAA07 /* MainView.swift */,
+				BF51AC2C27732DC2006FAA07 /* DetailInformations */,
 				BF51AC1B27720C35006FAA07 /* PrimaryInformations */,
 				BFDBC15827611E310075DA2A /* Model */,
 				BFDBC15527611DCE0075DA2A /* Repository */,
@@ -335,6 +370,7 @@
 				BF51AC1A27720C2A006FAA07 /* PrimaryInformationsView.swift in Sources */,
 				BFDBC14F27611A7F0075DA2A /* AuthentificationView.swift in Sources */,
 				BF51AC2427720FCD006FAA07 /* TitlesView.swift in Sources */,
+				BF51AC3127732E0A006FAA07 /* DetailInformationView.swift in Sources */,
 				BFDBC15127611B3C0075DA2A /* underlineTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
