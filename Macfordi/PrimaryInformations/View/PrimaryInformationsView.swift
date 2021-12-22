@@ -32,9 +32,17 @@ struct PrimaryInformationsView: View {
     
     var body: some View {
         VStack {
+            HStack {
+                Text("Référence : ")
+                    .font(.system(size: 18))
+                //TODO: Générate Reference
+                Text("à définir")
+                    .font(.system(size: 18, weight: .bold))
+                Spacer()
+            }
+            
             Group {
                 //Infos client
-                //TODO: Add generate Ref
                 HStack {
                     NavigationLink(destination: {
                         SearchView(title: "Nom du client", textSearch: $nameClient, data: $datas)
