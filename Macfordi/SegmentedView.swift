@@ -22,6 +22,8 @@ struct SegmentedView: View {
                 PrimaryInformationsView()
             } else if selectedView == 1 {
                 DetailInformationView()
+            } else if selectedView == 2 {
+                AddPieceView()
             }
         }
     }

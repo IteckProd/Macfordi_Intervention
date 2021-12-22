@@ -20,6 +20,7 @@
 		BF51AC37277391C5006FAA07 /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF51AC36277391C5006FAA07 /* ImagePickerView.swift */; };
 		BF51AC3927739202006FAA07 /* ImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF51AC3827739202006FAA07 /* ImageModel.swift */; };
 		BF51AC3B2773921B006FAA07 /* AddImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF51AC3A2773921B006FAA07 /* AddImageView.swift */; };
+		BF51AC412773950A006FAA07 /* AddPieceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF51AC402773950A006FAA07 /* AddPieceView.swift */; };
 		BFDBC10827610B2F0075DA2A /* MacfordiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDBC10727610B2F0075DA2A /* MacfordiApp.swift */; };
 		BFDBC10A27610B2F0075DA2A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDBC10927610B2F0075DA2A /* ContentView.swift */; };
 		BFDBC10C27610B330075DA2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFDBC10B27610B330075DA2A /* Assets.xcassets */; };
@@ -71,6 +72,7 @@
 		BF51AC36277391C5006FAA07 /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
 		BF51AC3827739202006FAA07 /* ImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageModel.swift; sourceTree = "<group>"; };
 		BF51AC3A2773921B006FAA07 /* AddImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddImageView.swift; sourceTree = "<group>"; };
+		BF51AC402773950A006FAA07 /* AddPieceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPieceView.swift; sourceTree = "<group>"; };
 		BFDBC10427610B2F0075DA2A /* Macfordi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Macfordi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFDBC10727610B2F0075DA2A /* MacfordiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacfordiApp.swift; sourceTree = "<group>"; };
 		BFDBC10927610B2F0075DA2A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -120,14 +122,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		BF51AC1B27720C35006FAA07 /* PrimaryInformations */ = {
+		BF51AC1B27720C35006FAA07 /* 1_PrimaryInformations */ = {
 			isa = PBXGroup;
 			children = (
 				BF51AC1C27720C3F006FAA07 /* Model */,
 				BF51AC2027720C6E006FAA07 /* ViewModel */,
 				BF51AC1D27720C43006FAA07 /* View */,
 			);
-			path = PrimaryInformations;
+			path = 1_PrimaryInformations;
 			sourceTree = "<group>";
 		};
 		BF51AC1C27720C3F006FAA07 /* Model */ = {
@@ -152,14 +154,14 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		BF51AC2C27732DC2006FAA07 /* DetailInformations */ = {
+		BF51AC2C27732DC2006FAA07 /* 2_DetailInformations */ = {
 			isa = PBXGroup;
 			children = (
 				BF51AC2D27732DDE006FAA07 /* Model */,
 				BF51AC2E27732DE7006FAA07 /* ViewModel */,
 				BF51AC2F27732DEE006FAA07 /* View */,
 			);
-			path = DetailInformations;
+			path = 2_DetailInformations;
 			sourceTree = "<group>";
 		};
 		BF51AC2D27732DDE006FAA07 /* Model */ = {
@@ -186,6 +188,38 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		BF51AC3C277394C7006FAA07 /* 3_AddPieces */ = {
+			isa = PBXGroup;
+			children = (
+				BF51AC3F277394E7006FAA07 /* Model */,
+				BF51AC3E277394E1006FAA07 /* ViewModel */,
+				BF51AC3D277394D7006FAA07 /* View */,
+			);
+			path = 3_AddPieces;
+			sourceTree = "<group>";
+		};
+		BF51AC3D277394D7006FAA07 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BF51AC402773950A006FAA07 /* AddPieceView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BF51AC3E277394E1006FAA07 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BF51AC3F277394E7006FAA07 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		BFDBC0FB27610B2F0075DA2A = {
 			isa = PBXGroup;
 			children = (
@@ -210,8 +244,9 @@
 				BF51AC172771EB4C006FAA07 /* MainView.swift */,
 				BF51AC3427735D67006FAA07 /* SegmentedView.swift */,
 				BFDBC15827611E310075DA2A /* Model */,
-				BF51AC2C27732DC2006FAA07 /* DetailInformations */,
-				BF51AC1B27720C35006FAA07 /* PrimaryInformations */,
+				BF51AC1B27720C35006FAA07 /* 1_PrimaryInformations */,
+				BF51AC2C27732DC2006FAA07 /* 2_DetailInformations */,
+				BF51AC3C277394C7006FAA07 /* 3_AddPieces */,
 				BFDBC15527611DCE0075DA2A /* Repository */,
 				BFDBC14A2761190E0075DA2A /* Auth */,
 				BFDBC15427611DA00075DA2A /* UIElement */,
@@ -392,6 +427,7 @@
 				BFDBC15127611B3C0075DA2A /* underlineTextField.swift in Sources */,
 				BF51AC3327733623006FAA07 /* AddDaysView.swift in Sources */,
 				BF51AC37277391C5006FAA07 /* ImagePickerView.swift in Sources */,
+				BF51AC412773950A006FAA07 /* AddPieceView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
