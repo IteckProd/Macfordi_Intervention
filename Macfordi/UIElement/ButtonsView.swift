@@ -39,7 +39,30 @@ struct ButtonPrimaryWithImage: View {
                     .foregroundColor(Colors.Enable)
             }.padding(.all)
             
-        }
+        }.frame(width: 256, height: 54)
+    }
+}
+
+struct ButtonPrimaryWithImageMini: View {
+    let text: String
+    let imageName: String
+    
+    var body: some View {
+        ZStack {
+            RoundedRectangle(cornerRadius: 10)
+                .frame(height: 54)
+                .foregroundColor(Colors.Background)
+            HStack {
+                Text(text)
+                    .font(.system(size: 18, weight: .semibold))
+                    .foregroundColor(text.isEmpty ? .gray : Colors.Enable)
+                Spacer()
+                Image(systemName: imageName)
+                    .font(.system(size: 18, weight: .semibold))
+                    .foregroundColor(Colors.Enable)
+            }.padding(.all)
+            
+        }.frame(width: 180, height: 54)
     }
 }
 

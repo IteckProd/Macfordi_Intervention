@@ -23,7 +23,7 @@ struct MainView: View {
             Spacer()
             
             NavigationLink(destination: {
-                PrimaryInformationsView()
+                SegmentedView()
             }, label: {
                 ZStack {
                     RoundedRectangle(cornerRadius: 15)

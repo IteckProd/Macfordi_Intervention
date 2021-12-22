@@ -12,7 +12,7 @@ struct DetailInformationView: View {
     @State private var machineNumber: String = ""
     @State private var hammerNumber: String = ""
     @State private var parcNumber: String = ""
-    //@State private var images = [ImageIntervention]()
+    @State private var images = [ImageModel]()
     @State var uuid = UUID().uuidString
     @State private var macfordiDescription = "Description Macfordi"
     @State private var macfordiInformation = "Informations"
@@ -35,6 +35,7 @@ struct DetailInformationView: View {
                         .frame(minHeight: 120, alignment: .leading)
                         .padding(.top, 50)
                     //TODO: Image intervention View
+                    ImagesInterventionView(images: $images, uuid: $uuid)
                     Spacer()
                     TextEditor(text: $macfordiInformation)
                         .border(Colors.Background)
@@ -75,15 +76,18 @@ struct InterventionDayView: View {
     
     var body: some View {
         HStack {
-            Title1(name: "Jour d'ntervention")
+            Title1(name: "Jour d'intervention")
             Spacer()
             Button(action: {
-                //ajout d'une journée
+                //TODO: ajout d'une journée
+                isPresented = true
             }, label: {
                 ButtonPrimaryWithImage(text: "Ajouter une journée", imageName: "plus")
-            }).frame(width: 256, height: 54)
+            })
         }.padding(.bottom)
-        
+            .sheet(isPresented: $isPresented) {
+                AddDaysView(isPresented: $isPresented).padding(.all)
+            }
         HStack {
             Text("Date")
                 .foregroundColor(.gray)
@@ -161,6 +165,60 @@ struct resumeDays: View {
                 }
             }.frame(width: 156, height: 156)
             Spacer()
+        }
+    }
+}
+
+struct ImagesInterventionView: View {
+    @Binding var images: [ImageModel]
+    @Binding var uuid: String
+    
+    var body: some View {
+        VStack {
+            HStack {
+                Text("Images d'intervention")
+                    .multilineTextAlignment(.leading)
+                    .font(.system(size: 24, weight: .medium))
+                    .foregroundColor(Colors.Enable)
+                Spacer()
+            }
+            if images.count > 0 {
+                ScrollView(.horizontal, showsIndicators: false) {
+                    HStack {
+                        ForEach(0..<images.count, id: \.self) {
+                            index in
+                            //image
+                            Image(uiImage: images[index].image)
+                                .resizable()
+                                .scaledToFill()
+                                .aspectRatio(4/3, contentMode: .fill)
+                                .frame(height: 100)
+                                .cornerRadius(20)
+                                .overlay(Button(action: {
+                                    print("delete")
+                                    images.remove(at: index)
+                                }, label: {
+                                    Circle()
+                                        .frame(width: 32, height: 32)
+                                        .foregroundColor(.white)
+                                        .overlay(Image(systemName: "multiply.circle.fill")
+                                                    .font(.system(size: 32))
+                                                    .foregroundColor(.red)
+                                                 , alignment: .center)
+                                }), alignment: .topTrailing)
+                        }
+                        AddImage(images: self.$images, withID:uuid)
+                        
+                    }
+                }
+            } else {
+                HStack {
+                    AddImage(images: self.$images, withID:uuid)
+                        .frame(width: 100)
+                    Spacer()
+                }
+                .padding(.horizontal)
+            }
         }
     }
 }
