@@ -9,7 +9,7 @@ import Foundation
 import FirebaseFirestore
 import FirebaseFirestoreSwift
 
-struct InterventionModel: Identifiable, Codable {
+struct Intervention: Identifiable, Codable {
     @DocumentID var id: String? = UUID().uuidString
     var idClient: String
     var pieces: [String: Double] //[id:Quantite]

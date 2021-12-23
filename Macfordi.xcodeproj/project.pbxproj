@@ -31,6 +31,11 @@
 		BF51AC5A2773ACE1006FAA07 /* Technicien.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF51AC592773ACE1006FAA07 /* Technicien.swift */; };
 		BF51AC5C2773AD61006FAA07 /* Piece.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF51AC5B2773AD61006FAA07 /* Piece.swift */; };
 		BF51AC5E2773AD85006FAA07 /* Intervention.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF51AC5D2773AD85006FAA07 /* Intervention.swift */; };
+		BF51AC6027747BDB006FAA07 /* InterventionRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF51AC5F27747BDB006FAA07 /* InterventionRepository.swift */; };
+		BF51AC622774806D006FAA07 /* MachineFabricantDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF51AC612774806D006FAA07 /* MachineFabricantDataRepository.swift */; };
+		BF51AC642774BCE8006FAA07 /* ClientDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF51AC632774BCE8006FAA07 /* ClientDataRepository.swift */; };
+		BF51AC682774BE69006FAA07 /* PieceDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF51AC672774BE69006FAA07 /* PieceDataRepository.swift */; };
+		BF51AC6A2774BF1D006FAA07 /* TechnicienDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF51AC692774BF1D006FAA07 /* TechnicienDataRepository.swift */; };
 		BFDBC10827610B2F0075DA2A /* MacfordiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDBC10727610B2F0075DA2A /* MacfordiApp.swift */; };
 		BFDBC10A27610B2F0075DA2A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDBC10927610B2F0075DA2A /* ContentView.swift */; };
 		BFDBC10C27610B330075DA2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFDBC10B27610B330075DA2A /* Assets.xcassets */; };
@@ -93,6 +98,11 @@
 		BF51AC592773ACE1006FAA07 /* Technicien.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Technicien.swift; sourceTree = "<group>"; };
 		BF51AC5B2773AD61006FAA07 /* Piece.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Piece.swift; sourceTree = "<group>"; };
 		BF51AC5D2773AD85006FAA07 /* Intervention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Intervention.swift; sourceTree = "<group>"; };
+		BF51AC5F27747BDB006FAA07 /* InterventionRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterventionRepository.swift; sourceTree = "<group>"; };
+		BF51AC612774806D006FAA07 /* MachineFabricantDataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MachineFabricantDataRepository.swift; sourceTree = "<group>"; };
+		BF51AC632774BCE8006FAA07 /* ClientDataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientDataRepository.swift; sourceTree = "<group>"; };
+		BF51AC672774BE69006FAA07 /* PieceDataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieceDataRepository.swift; sourceTree = "<group>"; };
+		BF51AC692774BF1D006FAA07 /* TechnicienDataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechnicienDataRepository.swift; sourceTree = "<group>"; };
 		BFDBC10427610B2F0075DA2A /* Macfordi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Macfordi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFDBC10727610B2F0075DA2A /* MacfordiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacfordiApp.swift; sourceTree = "<group>"; };
 		BFDBC10927610B2F0075DA2A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -276,12 +286,12 @@
 			isa = PBXGroup;
 			children = (
 				BF51AC5D2773AD85006FAA07 /* Intervention.swift */,
+				BF51AC552773AC0B006FAA07 /* JourIntervention.swift */,
+				BF51AC572773ACBB006FAA07 /* Trajet.swift */,
 				BF51AC4F2773A8C6006FAA07 /* Fabricant.swift */,
 				BF51AC512773A901006FAA07 /* Machine.swift */,
 				BF51AC532773AB12006FAA07 /* Client.swift */,
-				BF51AC552773AC0B006FAA07 /* JourIntervention.swift */,
 				BF51AC5B2773AD61006FAA07 /* Piece.swift */,
-				BF51AC572773ACBB006FAA07 /* Trajet.swift */,
 				BF51AC592773ACE1006FAA07 /* Technicien.swift */,
 			);
 			path = FirebaseModel;
@@ -362,6 +372,11 @@
 		BFDBC15527611DCE0075DA2A /* Repository */ = {
 			isa = PBXGroup;
 			children = (
+				BF51AC5F27747BDB006FAA07 /* InterventionRepository.swift */,
+				BF51AC612774806D006FAA07 /* MachineFabricantDataRepository.swift */,
+				BF51AC632774BCE8006FAA07 /* ClientDataRepository.swift */,
+				BF51AC672774BE69006FAA07 /* PieceDataRepository.swift */,
+				BF51AC692774BF1D006FAA07 /* TechnicienDataRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -489,22 +504,27 @@
 				BF51AC5E2773AD85006FAA07 /* Intervention.swift in Sources */,
 				BFDBC1492761190A0075DA2A /* AuthenticationState.swift in Sources */,
 				BF51AC582773ACBB006FAA07 /* Trajet.swift in Sources */,
+				BF51AC642774BCE8006FAA07 /* ClientDataRepository.swift in Sources */,
 				BF51AC522773A902006FAA07 /* Machine.swift in Sources */,
 				BF51AC3527735D67006FAA07 /* SegmentedView.swift in Sources */,
+				BF51AC6027747BDB006FAA07 /* InterventionRepository.swift in Sources */,
 				BF51AC2B27723939006FAA07 /* Keyboard.swift in Sources */,
 				BF51AC2627721134006FAA07 /* SearchBar.swift in Sources */,
 				BFDBC10827610B2F0075DA2A /* MacfordiApp.swift in Sources */,
 				BF51AC162771DA7E006FAA07 /* ButtonsView.swift in Sources */,
 				BF51AC1A27720C2A006FAA07 /* PrimaryInformationsView.swift in Sources */,
+				BF51AC6A2774BF1D006FAA07 /* TechnicienDataRepository.swift in Sources */,
 				BF51AC3B2773921B006FAA07 /* AddImageView.swift in Sources */,
 				BFDBC14F27611A7F0075DA2A /* AuthentificationView.swift in Sources */,
 				BF51AC2427720FCD006FAA07 /* TitlesView.swift in Sources */,
 				BF51AC4827739BB8006FAA07 /* ResumeView.swift in Sources */,
 				BF51AC3927739202006FAA07 /* ImageModel.swift in Sources */,
+				BF51AC622774806D006FAA07 /* MachineFabricantDataRepository.swift in Sources */,
 				BF51AC3127732E0A006FAA07 /* DetailInformationView.swift in Sources */,
 				BFDBC15127611B3C0075DA2A /* underlineTextField.swift in Sources */,
 				BF51AC3327733623006FAA07 /* AddDaysView.swift in Sources */,
 				BF51AC4D27739EFD006FAA07 /* SignatureView.swift in Sources */,
+				BF51AC682774BE69006FAA07 /* PieceDataRepository.swift in Sources */,
 				BF51AC502773A8C6006FAA07 /* Fabricant.swift in Sources */,
 				BF51AC37277391C5006FAA07 /* ImagePickerView.swift in Sources */,
 				BF51AC412773950A006FAA07 /* AddPieceView.swift in Sources */,

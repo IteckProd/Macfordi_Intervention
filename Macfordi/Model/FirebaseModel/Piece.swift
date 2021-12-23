@@ -9,7 +9,7 @@ import Foundation
 import FirebaseFirestore
 import FirebaseFirestoreSwift
 
-struct PieceModel: Identifiable, Codable, Equatable, Hashable {
+struct Piece: Identifiable, Codable, Equatable, Hashable {
     @DocumentID var id: String? = UUID().uuidString
     var reference: String
     var nom: String
