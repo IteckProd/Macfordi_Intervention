@@ -12,7 +12,9 @@ import Combine
 
 class TechnicienDataRepository: ObservableObject {
     
-    init() {    }
+    init() {
+        get()
+    }
     
     private let pathTechnicien: String = "Technicien"
     private let db = Firestore.firestore()

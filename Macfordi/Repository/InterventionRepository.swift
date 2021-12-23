@@ -12,7 +12,9 @@ import Combine
 
 class InterventionDataRepository: ObservableObject {
     //Jour intervention / Trajets
-    init() {    }
+    init() {
+        
+    }
     
     private let pathIntervention: String = "intervention"
     private let pathJourIntervention: String = "jourIntervention"

@@ -12,7 +12,9 @@ import Combine
 
 class PieceDataRepository: ObservableObject {
     
-    init() {    }
+    init() {
+        get()
+    }
     
     private let pathPiece: String = "Piece"
     private let db = Firestore.firestore()

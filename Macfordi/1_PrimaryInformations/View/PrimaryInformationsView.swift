@@ -6,10 +6,14 @@
 //
 
 import SwiftUI
+import FirebaseFirestoreSwift
+import FirebaseFirestore
 
 struct PrimaryInformationsView: View {
+    
     @ObservedObject private var keyboard = KeyboardResponder()
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    @ObservedObject var viewModel = PrimaryInformationViewModel(intervention: Intervention(id: "MAC0000", idClient: "", pieces: [:], idMachine: Firestore.firestore().collection("Intervention").document("MAC0000"), nomSignature: "", remarqueClient: "", remarqueMacfordi: "", imageURL: [], signatureURL: "", travaux: "", atelier: true, mail: "", nameInterlocuteur: ""))
     
     //Infos client
     @State var nameClient: String = ""
@@ -39,6 +43,11 @@ struct PrimaryInformationsView: View {
                 Text("à définir")
                     .font(.system(size: 18, weight: .bold))
                 Spacer()
+//                Button(action: {
+//                    viewModel.uploadExistingMachine()
+//                }, label: {
+//                    ButtonPrimary(text: "add machines")
+//                })
             }
             
             Group {

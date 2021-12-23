@@ -12,7 +12,9 @@ import Combine
 
 class ClientDataRepository: ObservableObject {
     
-    init() {    }
+    init() {
+        get()
+    }
     
     private let pathClient: String = "Client"
     private let db = Firestore.firestore()

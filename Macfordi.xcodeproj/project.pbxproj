@@ -36,6 +36,12 @@
 		BF51AC642774BCE8006FAA07 /* ClientDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF51AC632774BCE8006FAA07 /* ClientDataRepository.swift */; };
 		BF51AC682774BE69006FAA07 /* PieceDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF51AC672774BE69006FAA07 /* PieceDataRepository.swift */; };
 		BF51AC6A2774BF1D006FAA07 /* TechnicienDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF51AC692774BF1D006FAA07 /* TechnicienDataRepository.swift */; };
+		BF51AC6C2774D104006FAA07 /* PrimaryInformationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF51AC6B2774D104006FAA07 /* PrimaryInformationViewModel.swift */; };
+		BF51AC6F2774D7F7006FAA07 /* csvClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF51AC6E2774D7F7006FAA07 /* csvClass.swift */; };
+		BF51AC732774D8C9006FAA07 /* machine.csv in Resources */ = {isa = PBXBuildFile; fileRef = BF51AC702774D8C9006FAA07 /* machine.csv */; };
+		BF51AC742774D8C9006FAA07 /* clients macfordi.csv in Resources */ = {isa = PBXBuildFile; fileRef = BF51AC712774D8C9006FAA07 /* clients macfordi.csv */; };
+		BF51AC752774D8C9006FAA07 /* stock macfordi.csv in Resources */ = {isa = PBXBuildFile; fileRef = BF51AC722774D8C9006FAA07 /* stock macfordi.csv */; };
+		BF51AC772774E977006FAA07 /* UpdateCSV.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF51AC762774E976006FAA07 /* UpdateCSV.swift */; };
 		BFDBC10827610B2F0075DA2A /* MacfordiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDBC10727610B2F0075DA2A /* MacfordiApp.swift */; };
 		BFDBC10A27610B2F0075DA2A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDBC10927610B2F0075DA2A /* ContentView.swift */; };
 		BFDBC10C27610B330075DA2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFDBC10B27610B330075DA2A /* Assets.xcassets */; };
@@ -103,6 +109,12 @@
 		BF51AC632774BCE8006FAA07 /* ClientDataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientDataRepository.swift; sourceTree = "<group>"; };
 		BF51AC672774BE69006FAA07 /* PieceDataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieceDataRepository.swift; sourceTree = "<group>"; };
 		BF51AC692774BF1D006FAA07 /* TechnicienDataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechnicienDataRepository.swift; sourceTree = "<group>"; };
+		BF51AC6B2774D104006FAA07 /* PrimaryInformationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryInformationViewModel.swift; sourceTree = "<group>"; };
+		BF51AC6E2774D7F7006FAA07 /* csvClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = csvClass.swift; sourceTree = "<group>"; };
+		BF51AC702774D8C9006FAA07 /* machine.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = machine.csv; sourceTree = "<group>"; };
+		BF51AC712774D8C9006FAA07 /* clients macfordi.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "clients macfordi.csv"; sourceTree = "<group>"; };
+		BF51AC722774D8C9006FAA07 /* stock macfordi.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "stock macfordi.csv"; sourceTree = "<group>"; };
+		BF51AC762774E976006FAA07 /* UpdateCSV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateCSV.swift; sourceTree = "<group>"; };
 		BFDBC10427610B2F0075DA2A /* Macfordi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Macfordi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFDBC10727610B2F0075DA2A /* MacfordiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacfordiApp.swift; sourceTree = "<group>"; };
 		BFDBC10927610B2F0075DA2A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -180,6 +192,7 @@
 		BF51AC2027720C6E006FAA07 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				BF51AC6B2774D104006FAA07 /* PrimaryInformationViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -297,6 +310,18 @@
 			path = FirebaseModel;
 			sourceTree = "<group>";
 		};
+		BF51AC6D2774D7EA006FAA07 /* Temp */ = {
+			isa = PBXGroup;
+			children = (
+				BF51AC712774D8C9006FAA07 /* clients macfordi.csv */,
+				BF51AC702774D8C9006FAA07 /* machine.csv */,
+				BF51AC722774D8C9006FAA07 /* stock macfordi.csv */,
+				BF51AC6E2774D7F7006FAA07 /* csvClass.swift */,
+				BF51AC762774E976006FAA07 /* UpdateCSV.swift */,
+			);
+			path = Temp;
+			sourceTree = "<group>";
+		};
 		BFDBC0FB27610B2F0075DA2A = {
 			isa = PBXGroup;
 			children = (
@@ -320,6 +345,7 @@
 				BFDBC10927610B2F0075DA2A /* ContentView.swift */,
 				BF51AC172771EB4C006FAA07 /* MainView.swift */,
 				BF51AC3427735D67006FAA07 /* SegmentedView.swift */,
+				BF51AC6D2774D7EA006FAA07 /* Temp */,
 				BFDBC15827611E310075DA2A /* Model */,
 				BFDBC15527611DCE0075DA2A /* Repository */,
 				BF51AC1B27720C35006FAA07 /* 1_PrimaryInformations */,
@@ -479,8 +505,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF51AC732774D8C9006FAA07 /* machine.csv in Resources */,
+				BF51AC752774D8C9006FAA07 /* stock macfordi.csv in Resources */,
 				BFDBC10F27610B330075DA2A /* Preview Assets.xcassets in Resources */,
 				BFDBC15C276122280075DA2A /* Colors.xcassets in Resources */,
+				BF51AC742774D8C9006FAA07 /* clients macfordi.csv in Resources */,
 				BFDBC10C27610B330075DA2A /* Assets.xcassets in Resources */,
 				BFDBC1472761181F0075DA2A /* GoogleService-Info.plist in Resources */,
 			);
@@ -507,6 +536,7 @@
 				BF51AC642774BCE8006FAA07 /* ClientDataRepository.swift in Sources */,
 				BF51AC522773A902006FAA07 /* Machine.swift in Sources */,
 				BF51AC3527735D67006FAA07 /* SegmentedView.swift in Sources */,
+				BF51AC6C2774D104006FAA07 /* PrimaryInformationViewModel.swift in Sources */,
 				BF51AC6027747BDB006FAA07 /* InterventionRepository.swift in Sources */,
 				BF51AC2B27723939006FAA07 /* Keyboard.swift in Sources */,
 				BF51AC2627721134006FAA07 /* SearchBar.swift in Sources */,
@@ -528,6 +558,8 @@
 				BF51AC502773A8C6006FAA07 /* Fabricant.swift in Sources */,
 				BF51AC37277391C5006FAA07 /* ImagePickerView.swift in Sources */,
 				BF51AC412773950A006FAA07 /* AddPieceView.swift in Sources */,
+				BF51AC772774E977006FAA07 /* UpdateCSV.swift in Sources */,
+				BF51AC6F2774D7F7006FAA07 /* csvClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

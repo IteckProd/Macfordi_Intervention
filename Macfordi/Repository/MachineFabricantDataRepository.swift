@@ -12,7 +12,9 @@ import Combine
 
 class MachineFabricantDataRepository: ObservableObject {
     
-    init() {    }
+    init() {
+        getFabricants()
+    }
     
     private let pathFabricant: String = "Fabricant"
     private let pathMachine: String = "Machine"
@@ -58,7 +60,7 @@ class MachineFabricantDataRepository: ObservableObject {
         }
     }
     
-    func getMachines(fabricant: Fabricant) {
+    private func getMachines(fabricant: Fabricant) {
         guard let fabricantID = fabricant.id else {return}
         for oneMachine in fabricant.nameMachines {
             db.collection(pathFabricant).document(fabricantID).collection(oneMachine).addSnapshotListener {
