@@ -34,13 +34,13 @@ class PrimaryInformationViewModel: ObservableObject, Identifiable {
             .assign(to: \.clients, on: self)
             .store(in: &cancellables)
         
-        machineFabricantRepository.$machines
-            .map {
-                machines in
-                machines.map(machineSearch(name: ""))
-            }
-            .assign(to: \.machines, on: self)
-            .store(in: &cancellables)
+//        machineFabricantRepository.$machines
+//            .map {
+//                machines in
+//                machines.map(machineSearch(name: ""))
+//            }
+//            .assign(to: \.machines, on: self)
+//            .store(in: &cancellables)
     }
     
     func generateReference() {
