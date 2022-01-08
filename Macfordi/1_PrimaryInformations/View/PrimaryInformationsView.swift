@@ -28,11 +28,7 @@ struct PrimaryInformationsView: View {
     @State var ville: String = ""
     
     //TEMP:
-    @State var datas = [
-        SearchData(name: "Louis"),
-        SearchData(name: "Name2"),
-        SearchData(name: "Name3")
-    ]
+    @State var datas = [SearchData]()
     
     var body: some View {
         VStack {

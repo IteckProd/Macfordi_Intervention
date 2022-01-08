@@ -13,7 +13,8 @@ import Combine
 class MachineFabricantDataRepository: ObservableObject {
     
     init() {
-        getFabricants()
+        //TODO: Bug
+        //getFabricants()
     }
     
     private let pathFabricant: String = "Fabricant"

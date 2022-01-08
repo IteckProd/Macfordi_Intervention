@@ -118,7 +118,7 @@ struct InterventionDayView: View {
 //                        .foregroundColor(.black)
 //                }
                 Spacer()
-                Text("06h21")
+                Text("")
                     .foregroundColor(.black)
                 Image(systemName: "chevron.right")
                     .font(.system(size: 22, weight: .bold))
