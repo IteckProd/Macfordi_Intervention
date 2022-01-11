@@ -48,24 +48,28 @@ struct MainView: View {
             
             Spacer()
             
-            ZStack {
-                RoundedRectangle(cornerRadius: 15)
-                    .foregroundColor(Colors.Background)
-                VStack {
-                    HStack {
-                        Image(systemName: "rectangle.portrait.and.arrow.right.fill")
-                            .font(.system(size: 64))
-                            .foregroundColor(Colors.Enable)
-                        Text("Intervention sur chantier")
-                            .font(.system(size: 32))
+            NavigationLink(destination: {
+                SegmentedView()
+            }, label: {
+                ZStack {
+                    RoundedRectangle(cornerRadius: 15)
+                        .foregroundColor(Colors.Background)
+                    VStack {
+                        HStack {
+                            Image(systemName: "rectangle.portrait.and.arrow.right.fill")
+                                .font(.system(size: 64))
+                                .foregroundColor(Colors.Enable)
+                            Text("Intervention sur chantier")
+                                .font(.system(size: 32))
+                            Spacer()
+                        }.padding(.bottom)
+                        Text("Lorem ipsum dolor sit amet")
+                            .multilineTextAlignment(.leading)
+                            .font(.system(size: 18))
                         Spacer()
-                    }.padding(.bottom)
-                    Text("Lorem ipsum dolor sit amet")
-                        .multilineTextAlignment(.leading)
-                        .font(.system(size: 18))
-                    Spacer()
-                }.padding(.all)
-            }.frame(height: UIScreen.main.bounds.height/4)
+                    }.padding(.all)
+                }.frame(height: UIScreen.main.bounds.height/4)
+            })
             Spacer()
         }
         .navigationBarTitle("")
