@@ -28,7 +28,7 @@ struct MacfordiApp: App {
     
     func SettingFirestore() {
         let setting = FirestoreSettings()
-        setting.isPersistenceEnabled = true
+        setting.isPersistenceEnabled = false
         setting.cacheSizeBytes = FirestoreCacheSizeUnlimited
         Firestore.firestore().settings = setting
     }

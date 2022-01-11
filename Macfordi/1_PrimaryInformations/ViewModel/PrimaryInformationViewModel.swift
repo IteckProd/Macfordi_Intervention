@@ -19,6 +19,7 @@ class PrimaryInformationViewModel: ObservableObject, Identifiable {
     @Published var machines: [Fabricant: [Machine]] = [:]
     
     @Published var machineSearch: [SearchData] = []
+    @Published var fabricantSearch: [SearchData] = []
     
     private var cancellables: Set<AnyCancellable> = []
     var id = ""
@@ -34,16 +35,36 @@ class PrimaryInformationViewModel: ObservableObject, Identifiable {
             .assign(to: \.clients, on: self)
             .store(in: &cancellables)
         
-//        machineFabricantRepository.$machines
-//            .map {
-//                machines in
-//                machines.map(machineSearch(name: ""))
-//            }
-//            .assign(to: \.machines, on: self)
-//            .store(in: &cancellables)
+        machineFabricantRepository.$machines
+            .assign(to: \.machines, on: self)
+            .store(in: &cancellables)
     }
     
     func generateReference() {
         id = "MACxxxx"
+    }
+    
+    func createSearchMachineData(fabricantName: String?) {
+        machineSearch = []
+        for fabricant in Array(machines.keys) {
+            if fabricantName != nil && fabricantName != "" {
+                if fabricant.id == fabricantName {
+                    for machineName in fabricant.nameMachines {
+                        machineSearch.append(SearchData(name: machineName))
+                    }
+                }
+            } else {
+                for machineName in fabricant.nameMachines {
+                    machineSearch.append(SearchData(name: machineName))
+                }
+            }
+        }
+    }
+    
+    func createSearchFabricantData() {
+        fabricantSearch = []
+        for fabricant in Array(machines.keys) {
+            fabricantSearch.append(SearchData(name: fabricant.id ?? ""))
+        }
     }
 }

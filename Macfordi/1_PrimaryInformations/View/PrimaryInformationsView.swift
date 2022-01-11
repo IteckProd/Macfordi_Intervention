@@ -67,13 +67,19 @@ struct PrimaryInformationsView: View {
                 //Infos machine
                 HStack {
                     NavigationLink(destination: {
-                        SearchView(title: "Nom du Fabriquant", textSearch: $nameFabricant, data: $datas)
+                        SearchView(title: "Nom du Fabriquant", textSearch: $nameFabricant, data: $viewModel.fabricantSearch)
+                            .onAppear() {
+                                viewModel.createSearchFabricantData()
+                            }
                     }, label: {
                         ButtonEnriched(placeholder: "Nom du fabriquant", text: $nameFabricant)
                     }).padding(.trailing)
                     Spacer()
                     NavigationLink(destination: {
-                        SearchView(title: "Nom de la machine", textSearch: $NameMachine, data: $datas)
+                        SearchView(title: "Nom de la machine", textSearch: $NameMachine, data: $viewModel.machineSearch)
+                            .onAppear() {
+                                viewModel.createSearchMachineData(fabricantName: nameFabricant)
+                            }
                     }, label: {
                         ButtonEnriched(placeholder: "Nom de la machine", text: $NameMachine)
                     })

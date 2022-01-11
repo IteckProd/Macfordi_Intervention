@@ -13,8 +13,7 @@ import Combine
 class MachineFabricantDataRepository: ObservableObject {
     
     init() {
-        //TODO: Bug
-        //getFabricants()
+        getFabricants()
     }
     
     private let pathFabricant: String = "Fabricant"
@@ -64,7 +63,8 @@ class MachineFabricantDataRepository: ObservableObject {
     private func getMachines(fabricant: Fabricant) {
         guard let fabricantID = fabricant.id else {return}
         for oneMachine in fabricant.nameMachines {
-            db.collection(pathFabricant).document(fabricantID).collection(oneMachine).addSnapshotListener {
+            let nameMachine = oneMachine.replacingOccurrences(of: "/", with: "")
+            db.collection(pathFabricant).document(fabricantID).collection(nameMachine).addSnapshotListener {
                 querySnapshot, error in
                 
                 if let err = error {
